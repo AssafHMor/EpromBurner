@@ -1,0 +1,48 @@
+-------------------------------------------------------------------
+        Release Notes for the Unmanaged MCP2221 DLL
+-------------------------------------------------------------------
+
+                Microchip Technology, Inc.
+
+
+
+
+-------------------------------------------------------------------
+System Requirements
+-------------------------------------------------------------------
+Operating System: 	Windows XP SP3 or later
+Other: For v1.2.0 or lower Microsoft Visual C++ 2013 Redistributable Package (x86)* 
+        is needed.
+
+*= Or include msvcp120.dll and msvcr120.dll in same directory as DLL
+
+
+-------------------------------------------------------------------
+Versioning History
+-------------------------------------------------------------------
+Version 1.2.2 (Release 17/Jun/2015)
+ - ADC Vref, DAC Vref and DAC Value can now be saved to flash via the 
+    SetAdcVoltageReference, SetDacVoltageReference and SetDacValue methods. 
+    
+Version 1.2.1 (Released 01/04/2015)
+ - Removed .Net dependencies (msvcp120.dll and msvcr120.dll)
+ - added x64 version
+ - Internal DLL fixes
+ 
+Version 1.2.0 (Released 10/15/2014):
+ - Adjusted the allowed range of the current that can be requested from the USB bus to 2 - 500 mA
+ - Corrected issue with how the CRC value is calculated when PEC is used for SMBus transfers
+
+Version 1.1.0 (Released 10/07/2014):
+ - Improvements to performance and memory management
+
+Version 1.0.0 (Released 05/08/2014):
+ - Initial release
+  
+
+-------------------------------------------------------------------
+Contact Information
+-------------------------------------------------------------------
+Main Website: 		http://www.microchip.com
+Technical Support: 	http://support.microchip.com
+

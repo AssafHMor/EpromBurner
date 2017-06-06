@@ -1,0 +1,55 @@
+-------------------------------------------------------------------
+        Release Notes for the Managed MCP2221 DLL
+-------------------------------------------------------------------
+
+                Microchip Technology, Inc.
+
+
+
+
+-------------------------------------------------------------------
+System Requirements
+-------------------------------------------------------------------
+The system requirements will vary based off which managed DLL is used.
+Both support Windows XP SP3 or later.
+
+.NET4 Version: .NET4 Framework and Microsoft Visual C++ 2010 Redistributable Package (x86)*
+.NET2 Version: .NET2 Framework and Microsoft Visual C++ 2008 Redistributable Package (x86)**
+
+
+*= Or include msvcp100.dll and msvcr100.dll in same directory as DLL
+**= Or include msvcp90.dll, msvcm90.dll, and msvcr90.dll in same directory as DLL
+
+
+-------------------------------------------------------------------
+Versioning History
+-------------------------------------------------------------------
+Version 1.3.2 (Release 17/Jun/2015)
+ - ADC Vref, DAC Vref and DAC Value can now be saved to flash via the 
+    SetAdcVoltageReference, SetDacVoltageReference and SetDacValue methods. 
+    
+Version 1.3.1 (Released 01/06/2014):
+ - Corrected issue with SMBus read operation
+
+Version 1.3.0 (Released 10/15/2014):
+ - Adjusted the allowed range of the current that can be requested from the USB bus to 2 - 500 mA
+ - Corrected issue with how the CRC value is calculated when PEC is used for SMBus transfers
+
+Version 1.2.0 (Released 10/07/2014):
+ - Improvements to performance and memory management
+
+Version 1.1.0 (Released 06/26/2014):
+ - Separated DLL into two versions: one for older .NET2 applications, one for newer .NET4 applications
+   NOTE: Both DLL's are equivalent aside from the different version of .NET targeted.
+ - Added example code in both Visual Basic and C# 
+
+Version 1.0.0 (Released 05/08/2014):
+ - Initial release
+  
+
+-------------------------------------------------------------------
+Contact Information
+-------------------------------------------------------------------
+Main Website: 		http://www.microchip.com
+Technical Support: 	http://support.microchip.com
+
