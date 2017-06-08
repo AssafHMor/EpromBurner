@@ -106,7 +106,22 @@ namespace EpromBurner
 
         }
 
-        public 
+        public void ReadData (byte adr)
+        {
+
+            byte [] dataRead = new byte[Constants.EPROM_SIZE];
+            string epromData = "";
+            int result = usbI2c.Functions.WriteI2cData(Constants.SLAVE_WRITE_ADDRESS,)
+            int result = usbI2c.Functions.ReadI2cData(Constants.SLAVE_READ_ADDRESS,dataRead,(uint)dataRead.Length,Constants.I2C_SPEED);
+            if (result == 0)
+            {
+                for (int i = 0 ; i < dataRead.Length ; i++)
+                {
+                    epromData += (dataRead[i].ToString("D3") + " ");
+                }
+                Logger.WriteToLog(epromData);
+            }
+        }
 
 
         

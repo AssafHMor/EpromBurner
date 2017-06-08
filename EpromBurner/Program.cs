@@ -21,7 +21,8 @@ namespace EpromBurner
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
 
-            I2C tester = new I2C(0x04D8, 0x00DD);
+            I2C tester = new I2C(Constants.VID, Constants.PID);
+            tester.ReadData(Constants.START_READ_ADDRESS);
 
         }
     }

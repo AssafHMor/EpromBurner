@@ -9,5 +9,10 @@ namespace EpromBurner
     class Burner
     {
 
+        private bool ReadDataFromSensor (byte address, ref byte [] data)
+        {
+            if ()
+        }
+
     }
 }
